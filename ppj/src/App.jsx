@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
+import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Devocionales from './pages/Devocionales'
@@ -23,6 +24,7 @@ function App() {
           <Route path="*" element={<Home />} />
         </Routes>
       </main>
+      <Footer />
     </div>
   )
 }
