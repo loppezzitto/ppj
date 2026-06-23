@@ -1,0 +1,449 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #F7F3ED, #f5e6f0);
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  width: 100%;
+}
+
+.label {
+  font-size: 0.875rem;
+  letter-spacing: 0.15em;
+  color: #8B7355;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #5b21b6;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-size: 2.5rem;
+  font-style: italic;
+  color: #d4949d;
+  font-weight: 400;
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #5D4E37;
+  max-width: 500px;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.button {
+  background: linear-gradient(135deg, #a855f7, #7c3aed);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.6);
+}
+
+.quote {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.quoteIcon {
+  font-size: 3rem;
+  color: #a855f7;
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  line-height: 1;
+}
+
+.quoteText {
+  font-size: 1.1rem;
+  color: #5b21b6;
+  font-style: italic;
+  margin: 1.5rem 0 1rem 0;
+  line-height: 1.6;
+}
+
+.reference {
+  font-size: 0.95rem;
+  color: #8B7355;
+  margin: 1rem 0 0 0;
+}
+
+.heartButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #d4949d;
+  transition: transform 0.2s;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+
+.heartButton:hover {
+  transform: scale(1.2);
+  color: #a855f7;
+}
+
+.favorite {
+  color: #a855f7;
+}
+
+.controls {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  z-index: 10;
+}
+
+.navButton {
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid #a855f7;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #a855f7;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.navButton:hover {
+  background: #a855f7;
+  color: white;
+}
+
+.dots {
+  display: flex;
+  gap: 1rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: #d4a5d4;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dot:hover {
+  background-color: #a855f7;
+}
+
+@media (max-width: 1024px) {
+  .carousel {
+    height: 600px;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem 1rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1.6rem;
+  }
+
+  .description {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .button {
+    padding: 0.9rem 1.8rem;
+    font-size: 0.95rem;
+  }
+
+  .controls {
+    bottom: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .navButton {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 500px;
+    padding: 2rem 1rem;
+  }
+
+  .slide {
+    padding: 2rem 1rem;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 0 auto;
+  }
+
+  .label {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .quote {
+    padding: 1.5rem;
+  }
+
+  .quoteIcon {
+    font-size: 2rem;
+  }
+
+  .quoteText {
+    font-size: 1rem;
+  }
+
+  .reference {
+    font-size: 0.85rem;
+  }
+
+  .controls {
+    bottom: 1rem;
+    gap: 1rem;
+  }
+
+  .navButton {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .heartButton {
+    font-size: 1.2rem;
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel {
+    height: 420px;
+    padding: 1.5rem 0.75rem;
+  }
+
+  .slide {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .content {
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .label {
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.25rem;
+  }
+
+  .title {
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin: 0.25rem 0 1rem 0;
+  }
+
+  .description {
+    font-size: 0.8rem;
+    max-width: 100%;
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+  }
+
+  .button {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.8rem;
+    box-shadow: 0 2px 10px rgba(168, 85, 247, 0.3);
+  }
+
+  .button:hover {
+    box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+  }
+
+  .quote {
+    padding: 1.2rem;
+    border-radius: 15px;
+  }
+
+  .quoteIcon {
+    font-size: 1.5rem;
+    top: -5px;
+    left: 10px;
+  }
+
+  .quoteText {
+    font-size: 0.9rem;
+    margin: 1rem 0 0.75rem 0;
+  }
+
+  .reference {
+    font-size: 0.8rem;
+  }
+
+  .controls {
+    bottom: 0.75rem;
+    gap: 0.75rem;
+  }
+
+  .navButton {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+
+  .dots {
+    gap: 0.75rem;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .heartButton {
+    font-size: 1rem;
+    bottom: 0.75rem;
+    right: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 800px;
+  }
+
+  .slide {
+    padding: 2rem 1rem;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .label {
+    font-size: 0.75rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .quote {
+    padding: 1.5rem;
+  }
+
+  .quoteText {
+    font-size: 1rem;
+  }
+
+  .controls {
+    gap: 1rem;
+  }
+
+  .navButton {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}

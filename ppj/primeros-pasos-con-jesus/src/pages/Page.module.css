@@ -1,0 +1,136 @@
+.page {
+  background: linear-gradient(180deg, #fff 0%, #faf5ee 100%);
+  min-height: 100%;
+}
+
+.hero {
+  padding: 4rem 2rem 3rem;
+  background: linear-gradient(135deg, #f5e6f0 0%, #faf5ee 100%);
+  border-bottom: 1px solid #eadcf0;
+}
+
+.heroInner,
+.section,
+.cta {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  color: #8b7355;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.title {
+  color: #5b21b6;
+  font-size: 3rem;
+  line-height: 1.1;
+  margin: 0.75rem 0 1rem;
+}
+
+.intro {
+  color: #5d4e37;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  max-width: 760px;
+}
+
+.section {
+  padding: 3rem 2rem 0;
+  text-align: left;
+}
+
+.sectionTitle {
+  color: #5b21b6;
+  font-size: 1.8rem;
+  margin-bottom: 1.25rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid #f0e6f5;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(91, 33, 182, 0.08);
+  padding: 1.5rem;
+}
+
+.card h3 {
+  color: #5b21b6;
+  font-size: 1.1rem;
+  margin: 0 0 0.75rem;
+}
+
+.card p,
+.list li {
+  color: #5d4e37;
+  line-height: 1.7;
+}
+
+.list {
+  display: grid;
+  gap: 0.9rem;
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.quote {
+  background: #fff;
+  border-left: 4px solid #a855f7;
+  color: #5d4e37;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 0;
+  padding: 1.25rem 1.5rem;
+}
+
+.cta {
+  padding: 3rem 2rem 4rem;
+}
+
+.ctaBox {
+  background: #5b21b6;
+  border-radius: 8px;
+  color: white;
+  padding: 2rem;
+  text-align: left;
+}
+
+.ctaBox h2 {
+  color: white;
+  font-size: 1.6rem;
+  margin: 0 0 0.75rem;
+}
+
+.ctaBox p {
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1.25rem 2.5rem;
+  }
+
+  .title {
+    font-size: 2.1rem;
+  }
+
+  .intro {
+    font-size: 1rem;
+  }
+
+  .section,
+  .cta {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
